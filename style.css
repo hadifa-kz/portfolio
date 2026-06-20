@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: arial;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #B07156;
+}
+.navbar{
+    background-color:#2F1B25 ;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 20px;
+
+}
+.links{
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display:flex;
+    gap:40px;
+    margin-right:20px
+    
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.links a:hover{
+     border: 2px solid white
+}
+.home{
+    height: 90vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10px;
+    /* background: */
+    /* color: white;
+    text-align: center; */
+}
+.home{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.home-text{
+    flex: 1;
+}
+.home-text h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+.home h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2F1B25;
+}
+.home-text p{
+    font-size: 1.1rem;
+    margin: 25px;
+    color: white;
+}
+button{
+    display: inline-block;
+    /* margin-top: 30px; */
+    padding: 12px 28px;
+    /* border: none; */
+    border-radius: 8px;
+    background: #2b1027;
+    color: white;
+    text-decoration: none;
+    /* font-size: 18px; */
+    font-weight: 600;
+    /* cursor: pointer; */
+    transition: 0.3s;
+}
+.home button:hover{
+    border: 2px solid white;
+}
+.home-content{
+    display: flex !important;
+    flex-direction: row-reverse;
+    /* text-align: center !important; */
+    justify-content: space-between !important;
+    gap: 50px !important;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.home-image{
+    flex: 1;
+    max-width: 400px !important;
+    text-align: center;
+}
+.home-image img{
+    width: 100% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    aspect-ratio: 1/1 !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2F1B25;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.About{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.About{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.About h1{
+    font-size: 35px;
+    color: #2F1B25;
+}
+.About p{
+    margin: 10px 0;
+}
+.about-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.about-box div{
+    background: rgb(199, 194, 194);
+    color: #2F1B25;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: 0.4s;
+
+}
+
+.about-box div:hover{
+    transform: translateY(-10px);
+}
+.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.skills{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.skills h1{
+    font-size: 35px;
+    color: white;
+}
+.skills h3{
+    font-size: 25px;
+    color: #2F1B25;
+}
+.skills p{
+    margin: 10px 0;
+}
+.skills-box{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.skills{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.skills h1{
+    font-size: 35px;
+    color: #2F1B25 ;
+}
+.skills-box div{
+    background: rgb(199, 194, 194);
+    color: #2F1B25;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    transition: 0.4s;
+
+}
+
+.skills-box div:hover{
+    transform: translateY(-10px);
+}
+.Achievements{
+    
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Achievements h1{
+    
+    margin-bottom: 30px;
+    font-size: 35px;
+    
+}
+.Achievements-box{
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px;
+    margin-top: 50px; */
+}
+.card{
+    background: rgb(199, 194, 194);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    transition: 0.4s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.card h4{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.card ul{
+    /* text-align: left; */
+    padding-left: 20px;
+}
+
+
+.Achievements-box div:hover{
+    transform: translateY(-10px);
+} 
+.card :hover{
+    tranform: translate(-8px) ;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card li{
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+h1, u{
+    text-decoration: none;
+}
+.Contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+.contact-content h1{
+    font-size: 2.5rem;
+    color: #2F1B25 ;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.contact-content h1::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    color: #2F1B25;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 60%;
+    height: 4px;
+    border-radius: 2px;
+}
+.contact-content > p{
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+}
+.contact-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+.contact-icon a{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transform: 0.3s;
+    border: 2px solid white;
+
+}
+.contact-icon a i{
+    font-size: 2.2rem;
+    color: #2F1B25;
+    transition: 0.3s;
+}
+.contact-icon a:hover{
+    transform: translateY(-10px) scale(1.1);
+    border: 2px solid white;
+}
+.contact-icon a:hover{
+    color: #fff;
+
+}
+.footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+   margin-top: auto;
+   margin-bottom: 0;
+   font-size:14px;
+}
+
+
+
+
+
