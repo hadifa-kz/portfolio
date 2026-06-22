@@ -11,7 +11,12 @@
    <header>
          <nav class="navbar">
             <div class="logo">Portfolio.</div>
-            <div class="links">
+            
+<div class="menu-toggle" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+<div class="links" id="navLinks">
                <a href="#home">Home</a>
                <a href="#About">About</a>
                <a href="#skills">skills</a>
@@ -119,7 +124,7 @@
             <h1>Contact Me</h1>
             <p>Let's connect & build something amazing together!</p>
          
-         <div class="contact-icon">
+         <!-- <div class="contact-icon">
             <a href="mailto:hafizahadifaabid@gmail.com" target="_blank" class="icon-link" title="Email Me">
                <i class="fa-solid fa-envelope"></i>
             </a>
@@ -129,12 +134,24 @@
             <a href="https://github.com/hadifa-abid" target="_blank" class="icon-link" title="Github">
               <i class="fa-brands fa-github"></i>
             </a>
-         </div>
+         </div> -->
+         <div class="contact-links">
+               <a href="www.linkedin.com/in/hadifa-abid-0b2a103a9">LinkedIn</a>
+   <a href="https://github.com/hadifa-kz">GitHub</a>
+  <a href="mailto:your@email.com">Email</a>
+</div>
          </div>
       </section>
    </header>
    <footer class="footer">
     <p>© Thanks for visiting — let's create something amazing together! </p>
 </footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+
 </body>
 </html>`
